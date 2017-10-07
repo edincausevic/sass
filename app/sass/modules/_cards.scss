@@ -1,0 +1,46 @@
+.card-medium {
+	width: 30%;
+    margin-right: 5%;
+	float: left;
+	margin-bottom: 2.227rem;
+	
+	@media all and (max-width: $break-medium) {
+		width: 32%;
+     	margin-right: 2%;
+	} //980px
+	@media all and (max-width: $break-super-small) { width: 100%; } //480px
+	
+	a { text-decoration: none; }
+	
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+	
+	img {
+		width: 100%;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;	
+		display: block;
+	}
+	
+	h2 { 
+		line-height: 39px;
+		@media all and (max-width: $break-medium) {line-height: 25px;}
+	}
+	
+	.card-medium-info {
+		padding: 26px 17px 26px 27px;
+    	background-color: white;
+		font-size: $font-min-px;
+		line-height: 24px;
+		
+		@media all and (max-width: $break-small) {
+			padding: 26px 17px 26px 27px;
+			font-size: $font-min-px;
+		} //736px
+		p {
+			margin-top: 18px;
+			font-size: $font-min-px;
+		}
+	}
+}

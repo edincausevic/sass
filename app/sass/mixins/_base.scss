@@ -1,0 +1,20 @@
+// clear all
+@mixin clearfix {
+
+    &:before, &:after {
+      content: " ";
+      display: table;
+  }
+    &:after {
+    clear: both;
+  }
+}
+
+// POSITION ELEMENT
+@mixin centar($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%,-50%);
+}
+

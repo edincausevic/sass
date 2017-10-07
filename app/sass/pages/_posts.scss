@@ -1,0 +1,35 @@
+.post {
+	margin-top: 3.864rem;
+	padding: 0 20% 0 10%;
+	line-height: 35px;
+	@media all and (max-width: $break-medium) {line-height: 29px;} //980px
+	@media all and (max-width: $break-small) {padding: 0 8% 0 8%;} //736px
+	@media all and (max-width: $break-super-small) {margin-top: 1.864rem;} //480px
+	
+	p {
+		margin-bottom: 1.591rem;
+	}
+	
+	footer {
+		margin-top: 3.864rem;
+		margin-bottom: 3.864rem;
+		
+		.footer-post-left {
+			float: left; 
+			width: 235px;
+			@media all and (max-width: $break-small) {width: 100%;} //736px
+		}
+		.footer-post-right {
+			float: right; 
+			text-align: right; 
+			width: 235px;
+			@media all and (max-width: $break-small) {
+				width: 100%;
+				text-align: left;
+				float: left;
+			} //736px
+		}
+		p { margin: 0;}
+		a { color: $link-color; }
+	}
+}

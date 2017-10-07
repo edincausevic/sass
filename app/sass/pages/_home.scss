@@ -1,0 +1,5 @@
+
+.posts-cars {
+	margin-top: $top-margin-medium !important;
+	@media all and (max-width: $break-large) {padding: 0px 0.9091rem;}
+}

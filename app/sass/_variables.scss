@@ -1,0 +1,76 @@
+
+// COLORS
+
+$color-white: #ffffff;
+$color-blue: #2d9cdb;
+$color-darkgray: #3E4D60; 
+$color-mediumgray:#868686;
+$color-lightgray: #F8F8F8;
+$color-mediumgray-soft: #8C94A8;
+$color-darkblue: #111a2c;
+$color-lightblue: #2d9cdb;
+
+$text-muted: $color-mediumgray-soft;
+$bc-color-light: $color-lightgray;
+$main-menu-color: $color-darkblue;
+$link-color: $color-lightblue;
+
+
+// FONTS
+
+// Poppins Font
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+// Roboto Font
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$Poppins: 'Poppins', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+
+$font-main: $Roboto;
+$font-second: $Poppins;
+
+$font-weight-normal: 400;
+$base-font-size: 22px;
+
+$font-super-large: 2.182rem; //48px
+$font-large:       1.182rem; //26px
+$font-normal:      1rem; //22px 
+$font-small:       0.9091rem; //20px
+$font-super-small: 0.8182rem; //18px
+$font-super-large-px: 48px; 
+$font-large-px:       26px;  
+$font-small-px:       20px; 
+$font-super-small-px: 18px;
+$font-min-px:         16px;
+$font-super-min-px:   14px; 
+
+
+// MEASUREMENTS
+
+$max-width: 1188px;
+$top-margin-medium: 2.727rem;
+
+$break-super-large: 1690px;
+$break-large:       1280px;
+$break-medium:      980px;
+$break-small:       736px;
+$break-super-small: 480px;
+
+
+
+// RESPONSIVE
+
+//@media all and (max-width: $break-super-large) {} //1690px
+//@media all and (max-width: $break-large) {} //1280px
+//@media all and (max-width: $break-medium) {} //980px
+//@media all and (max-width: $break-small) {} //736px
+//@media all and (max-width: $break-super-small) {} //480px
+
+
+
+
+
+
+
+
+

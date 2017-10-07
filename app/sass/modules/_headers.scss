@@ -1,0 +1,53 @@
+// ALL HEADERS
+
+header { font-family: $font-second; }
+
+
+// HOME HEADER
+
+.header-one {
+	@include backgroundImage('../../app/img/bc-header1.jpg', rgba(27, 32, 44, 0.25), rgba(10, 12, 19, 0.25), cover, center, inherit, 662px); 	
+	position: relative;
+
+	@media all and (max-width: $break-medium) { height: 600px; }
+	
+	.main-menu {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+// POSTS HEADER
+
+.posts-header {
+	@include backgroundImage('../../app/img/bc-header2.jpg', rgba(27, 32, 44, 0.25), rgba(10, 12, 19, 0.25), cover, center, inherit, 500px); 
+	position: relative;
+	
+	.hero-text-box {
+		width:50%;
+		position: absolute;
+		top: 21%;
+		left: 15%;
+		
+		@media all and (max-width: $break-medium) {
+			top: 26%;
+			left: 10%;
+		} //980px
+		@media all and (max-width: $break-small) { width: 80%;} //736px
+		@media all and (max-width: $break-super-small) { top: 20%;} //480px
+		
+		span {
+			color: $color-white;
+			font-size: $font-super-min-px;
+			line-height: 21px;
+		}
+		
+		h1 {
+			color: $color-white;
+			line-height: 65px;
+    		margin: 0;
+			
+			@media all and (max-width: $break-medium) { line-height: 53px;}
+		}
+	}
+}

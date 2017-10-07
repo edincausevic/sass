@@ -1,0 +1,8 @@
+.row {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+.clearFix { @include clearfix;}
+.text-muted { color: $text-muted!important;}
+.slideRight { left: 0!important; opacity: 1!important;}
