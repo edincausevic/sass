@@ -1,0 +1,56 @@
+// ALL MODALS TEMPLATE
+.modal-back {
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+	z-index: 6;
+	
+	.modal {
+		@include centar(50%, 50%);
+		@media all and (max-width: $break-medium) { width: 100%; padding: 0 10px;} //980px
+	}
+}
+
+// POST MODAL
+.post-modal {
+	
+	.modal {
+		max-width: $madal-width;
+		font-size: $font-min-px;
+		line-height: 24px;
+	
+		img {
+			width: 100%;
+			display: block;
+		}	
+		
+		article {
+			padding: 1.455rem;
+			background-color: $color-white;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			
+			h2 { line-height: 36px; }
+			
+			span {
+				margin: 4px 0;
+    			display: block;
+			}
+			
+			p { 
+				font-family: $font-second; 
+				font-size: $font-min-px;
+			}
+			
+			footer {
+				margin: 10px 0px;
+				a:first-child { float: left; padding: 10px 0 0 0;}
+				a:last-child {float: right; padding: 10px 0 0 0;}
+			}
+		}
+	}
+}
+
